@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> Lazerankos Erosion Model </title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+		<link   type="text/css"  rel="stylesheet"  href="../css/common.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.8.16.custom.css" media="screen" />
+		<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
+		<script type="text/javascript" src="js/highcharts.js"></script>
+		<script type="text/javascript" src="js/swfobject.js"></script>
+		<script type="text/javascript" src="js/modules/exporting.js"></script>
+		<script type="text/javascript" src="js/lem.js"></script>
+		<link rel="stylesheet" href="../../css/common.css" />
+		<link rel="stylesheet" href="css/header.css" />
+		<script type="text/javascript" src="js/chosen.jquery.min.js"></script>
+		<link rel="stylesheet" href="css/chosen.css" />
+		<link rel="stylesheet" href="css/css3.css" />
+		<script type="text/javascript" src="js/jquery.simplemodal.js"></script>
+		<script type="text/javascript" src="js/model.js"></script>
+		<script type="text/javascript" src="js/model1.js"></script>
+		<link type="text/css"  rel="stylesheet"  href="css/model.css" />
+		<script type="text/javascript" src="js/jquery.tinyscrollbar.min.js"></script>
+		<link rel="stylesheet" href="css/website.css" type="text/css" media="screen"/>
+		<script type="text/javascript" src="js/jquery.qtip.min.js"></script>
+		<link rel="stylesheet" href="css/jquery.qtip.min.css" />
+		<script type="text/javascript">
+			var volume, radious, indataarray = [];
+			var objMaterial, draw, objdata, i = 0;
+
+		</script>
+	</head>
+	<body>
+		<article class="page">
+		<div id="tabs">
+		<ul>
+			<div class = "imag">
+				<img src="../images/coep_logo_sim.png">
+				<h3 align="left" class="headStyle">Erosion Mechanism for EDM Using Lazeranko's Model</h3>
+				
+			</div>
+							
+		</ul>
+			<!--<header class="logo">
+				<aside class = 'logo-title'>
+					College of
+					<br>
+					<small>Engineering,Pune</small>
+				</aside>
+				<span id="a2network">Micromachine Laboratory</span>
+			</header>
+			<aside class="primary">
+				<p class="subhead">
+					Virtual Laboratory
+				</p>
+				<h3 class = "headStyle">To Study Erosion Mechanism for EDM using Lazeranko's Model</h3>
+			</aside>
+			<hr/>-->
+			<section class = "container4">
+				<section class = "container3">
+					<div class = "col1">
+						<h2  class = "titile">Control Panel</h2>
+						<div class="content">
+							<label>Materials : </label>
+							<div class="inputstyle">
+								<select id="material"  style="width: 100px;" >
+									<option selected="selected"> --select-- </option>
+									<option value = 0> Aluminium </option>
+								</select>
+							</div>
+							<br>
+							<br>
+							<label>Choose Constant Parameter : </label>
+							<div class="inputstyle">
+								<select id="constant" >
+									<option selected="selected"> --select-- </option>
+									<option value=1> Energy(Kj) </option>
+									<option value=2> Frequency(Hz) </option>
+								</select>
+							</div>
+							<div id = "display"></div>
+							<div id = "en"></div>
+							<div id="contentoutput">
+								<div id = "outputarea"></div>
+							</div>
+						</div>
+						<button id="output" class="action greenbtn"style="font: bold 11px/17px Helvetica,Arial,sans-serif;" title="Output">
+							<span class = "label add"></span>
+						</button>
+						<button id="reload" class="action greenbtn"style="font: bold 11px/17px Helvetica,Arial,sans-serif;" title="Reload">
+							<span class = "label refresh"></span>
+						</button>
+						<button id="plotenergy" class="action greenbtn"style="font: bold 11px/17px Helvetica,Arial,sans-serif;" title="Plot Energy vs Volume">
+							<span class = "label plot"></span>
+						</button>
+						<button id="swf" class="action greenbtn"style="font: bold 11px/17px Helvetica,Arial,sans-serif;"title="Play Animation">
+							<span class = "label play"></span>
+						</button>
+					</div>
+					<div class = "col2">
+						<h2  class = "titile">Material Selected and Its Property</h2>
+						<div id = "outputresultsection">
+							<canvas id="diagram" width="320" height="250"></canvas>
+						</div>
+						<div id = "selectedvalue"></div>
+					</div>
+				</section>
+			</section>
+			<div id="dialog1" title="Basic dialog">
+				<label style=" margin: 1em -1em;;font-size: 0.8em;">Constant Frequency</label>
+				<div class="inputstyle2">
+					<select id = 'constantFer' name = 'frequency' style="width: 100px;">
+						<option selected = 'selected'>--select--</option><option value = 1000>1000</option><option value = 2000>2000</option><option value = 3000>3000</option><option value = 4000>4000</option><option value = 5000>5000</option>
+					</select>
+				</div>
+			</div>
+			<div id="cur-modal-content">
+				<div id="cur-modal-title">
+					Graph
+				</div>
+				<div class="close">
+					<a href="#" class="simplemodal-close">x</a>
+				</div>
+				<div id="cur-modal-data">
+					<div id="graph" style="width:95%; height:510px;z-index: 999999;"></div>
+					<p>
+						<button class="action simplemodal-close redbtn">
+							<span class="label">Close</span>
+						</button>
+						<span>(or press ESC or click the overlay)</span>
+					</p>
+				</div>
+			</div>
+			<!--<hr/>
+			<footer>
+				<h4>&#169; 2011 - 2012 COEP Virtual Lab</h4>
+			</footer>-->
+		
+		<div style="position:absolute; top:608px; width:1229px;margin:0 auto;">
+		<div class="art-footer">
+                <div class="art-footer-t"></div>
+                <div class="art-footer-l"></div>
+                <div class="art-footer-b"></div>
+                <div class="art-footer-r"></div>
+                <div class="art-footer-body">
+                    <a href="#" class="art-rss-tag-icon" title="RSS"></a>
+					
+                            <div class="art-footer-text art-footer-psr">
+                                <p><a href="#">About Us</a> | <a href="./../../../contacts.htm">Contact Us</a> | <a href="./../../../feedback.htm">Feedback</a></p><p>Copyright &#169;2011.COEP Virtual Lab.</p>
+                                                            </div>
+                    <div class="cleared"></div>
+                </div>
+            </div>
+		</div>
+	</article>
+	</body>
+</html>

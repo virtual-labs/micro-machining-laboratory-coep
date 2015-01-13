@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<title>Electrochemical Grinding</title>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>index</title>
+		<meta name="author" content="shree" />
+		<!-- Date: 2012-11-27 -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+		<link type="text/css"  rel="stylesheet"  href="../css/common.css">
+		<link type="text/css" rel="stylesheet" href="css/header.css"/>
+		<link type="text/css"  rel="stylesheet"  href="css/style.css"/>
+		<link type="text/css"  rel="stylesheet"  href="css/ecg.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.8.16.custom.css" media="screen" />
+		<script type="text/javascript" src="lib/jquery-1.6.2.min.js"></script>
+		<!--<script type="text/javascript" src="lib/jquery-ui-1.8.16.custom.min.js"></script>-->	
+		<script type="text/javascript"  src="lib/jquery-ui.js"></script>
+		<script type="text/javascript" src="lib/raphael.js"></script>
+	</head>
+	<body>
+			<article class="page">
+			<ul>
+			<div class = "imag">
+				<img src="images/coep_logo_sim.png">
+				<h3 align="left" class="headStyle">Electrochemical Grinding process</h3>
+			</div>			
+		</ul>
+		<section class = "container4">
+				<section class = "container3">
+					<div class = "col1">
+						<h2  class = "titile">Control Panel</h2>
+						<div class="content">
+						  <div id="tabs">
+							    <ul>
+							        <li><a href="#tabs-1">Effect of parameter<br>on current density</a></li>
+							        <li><a href="#tabs-2">Effect of current<br>density on MRR</a></li>
+							    </ul>
+							    <div id="tabs-1">
+							     <div>
+							    	<input type="radio" class="mesurevolt1" name="group1" value="depthCuts" /><label>Effect of voltage for different dpths of cuts</label><br>
+							    	<input type="radio" class="mesurevolt2" name="group1" value="electrolytes" /><label>Effect of voltage for different electrolytes</label><br>
+							    	<input type="radio" class="mesurevolt3" name="group1" value="concentration" /><label>Effect of voltage for different electrolytes concentrations</label>  
+							    </div>
+							    <div id="showVol" style="display: none;position: relative;top: 20px;">
+								     <label>Select Voltage : </label>
+								    	<!--<div id="material-type" class="inputstyle">-->
+											<select id='voltage'  style='width: 100px;'></select>								
+										<!--</div>-->
+								</div>
+							    <div id="docuts" style="display: none;position: relative;top: 30px;">
+							    <table>
+							    	<tr><td>
+									    <label>Select depth of cut (Amp/mm<sup>2</sup>) :  </label></td><td>
+									<input type="radio" class="depth-cut" name="group" value="depthCuts5" /><label>Depth of cut 5 &#181;m</label><br>
+									</td></tr>
+									<tr><td></td><td><input type="radio" class="depth-cut" name="group" value="depthCuts10"/><label>Depth of cut 10 &#181;m</label><br>
+									</td></tr>
+								</table>
+							    </div>
+							    <div id="electrolytes" style="display: none;position: relative;top: 30px;">
+							    <table>
+							    <tr><td>
+							    	<label>Select electrolytes (Amp/mm<sup>2</sup>) : </label></td><td>
+									<input type="radio" class="depth-elect" name="elecgroup" value="KNO2"/>KNO<sub>2</sub></td></tr>
+									<tr><td></td><td><input type="radio" class="depth-elect" name="elecgroup" value="NaNO3" />NaNO<sub>3</sub></td>
+
+								</table>
+							    </div>
+							    <div id="concentrations" style="display: none;position: relative;top:30px;">
+							    <table>
+								    <tr><td>
+								    	<label>Select different electrolytes concentrations(Amp/mm<sup>2</sup>): </label></td>
+								    	<td><input type="radio" class="depth-con" name="congroup" value="con5" />5% Concentration</td></tr>
+										<tr><td></td><td><input type="radio" class="depth-con" name="congroup" value="con10" />10% Concentration</td></tr>
+										<tr><td></td><td><input type="radio" class="depth-con" name="congroup" value="con15"/>15% Concentration</td></tr>
+								</table>
+							    </div>
+							    </div>
+							    <div id="tabs-2">
+							    	   
+							    	     <label>Select Current Density (Amp/mm<sup>2</sup>): </label>
+										 <select id='density'  style='width: 100px;'></select><br>						
+							<table>
+							    	<tr><td><label>Predict Material removal rate for </label></td>
+							    		<td><br><br><label>Theoritical</label><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" class="density-mrr" name="densitygroup" value="hvalency"/><label>For higher valency</label></td>
+							    	</tr>
+							    	<tr>
+							    		<td></td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" class="density-mrr" name="densitygroup" value="lvalency" /><label>For lower valency</label></td></tr>
+									<tr>
+										<td></td><td><input type="radio" class="density-mrr" name="densitygroup" value="experimental"/><label>Experimental</label></td>
+									</tr>
+							</table>
+									
+								</div>
+						    </div>
+						</div>
+					</div>
+					<div class = "col2">
+						<h2  class = "titile">Electrochemical grinding</h2>
+						<div id="diagram" class="work-space"></div>
+					</div>
+					<div id="message"></div>				
+				</section>	
+			
+		</section>
+			<div style="position:absolute; top:704px; width:1229px;margin:0 auto;">
+		<div class="art-footer">
+                <div class="art-footer-t"></div>
+                <div class="art-footer-l"></div>
+                <div class="art-footer-b"></div>
+                <div class="art-footer-r"></div>
+                <div class="art-footer-body">
+                    <a href="#" class="art-rss-tag-icon" title="RSS"></a>					
+                            <div class="art-footer-text art-footer-psr">
+                                <p><a href="#">About Us</a> | <a href="./../../../contacts.htm">Contact Us</a> | <a href="./../../../feedback.htm">Feedback</a></p><p>Copyright &#169;2011.COEP Virtual Lab.</p>
+                                                            </div>
+                    <div class="cleared"></div>
+                </div>
+            </div>
+            </div>
+		</article>
+		
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/view.js"></script>	
+		<script type="text/javascript" src="js/blockDiagram.js"></script>
+		<script type="text/javascript" src="js/animation.js"></script>
+		
+	</body>
+</html>
