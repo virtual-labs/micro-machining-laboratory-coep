@@ -1,0 +1,340 @@
+*{
+	margin:0;
+	padding:0;
+}
+.refresh {
+	background: url("../css/images/rf.png") no-repeat scroll 7px 0px transparent;
+}
+.add {
+	background: url("../css/images/add.png") no-repeat scroll 9px -1px transparent;
+}
+.play {
+	background: url("../css/images/play.png") no-repeat scroll 12px -1px transparent;
+}
+.plot {
+	background: url("../css/images/plot.png") no-repeat scroll 8px -1px transparent;
+}
+.container4 {
+	background: none repeat scroll 0 0 #DDDDDD;
+	border: 1px solid #FFFFFF;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+	height: 32em;
+	margin: 0 3em;
+	width: 73.7em;
+}
+.container3 {
+
+	height: 26em;
+	width: 27em;
+}
+
+.inputstyle {
+	   margin: -2em 13em;
+    position: absolute;
+}
+.inputstyle1 {
+	  margin: 3em 8.7em 0 9em;
+
+}
+.inputstyle2 {
+  margin: -2em 7.7em 4em;
+}
+.col1 {
+	border: 1px solid #BBBBBB;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	height: 24em;
+	margin: 1em 1em;
+}
+.freq-pos{
+	 margin: 1em;
+}
+.textbox-align{
+	 margin: 1em 6.4em;
+}
+.col2 {
+	 border: 1px solid #BBBBBB;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    height: 30em;
+    margin: -25em 38em;
+    width: 34.6em;
+    margin-left: 450px;
+}
+#col3 {
+	border: 1px solid #BBBBBB;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	 height: 23.8em;
+    margin: 1em 37.3em;
+    position: absolute;
+	width: 18em;
+}
+#col4 {
+	border: 1px solid #BBBBBB;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	  height: 23.8em;
+     margin: -24em 38.3em;
+	width: 16.4em;
+	 margin: 1em 56.3em;
+    position: absolute;
+}
+h3 {
+	color: #5594C2;
+	font-size: 1.2em;
+	margin: 1.2em;
+	text-align: center;
+	text-shadow: 1px 1px 6px #000000;
+	font-family: verdana;
+}
+.titile{	border-bottom: 1px solid #BBBBBB;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	
+}
+h2 {
+	color: #A8A8A8;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    font-family: Arial,Verdana,Helvetica,sans-serif;
+    font-size: 1.3em;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+   // text-shadow: 2px 0 2px #666666;
+}
+
+.content {
+	border-bottom: 2px solid #DDDDDD;
+	height: 17em;
+	margin-bottom: 10px;
+	position: relative;
+}
+label {
+	 color: #222222;
+    font: 700 81.25%/3em arial,helvetica,sans-serif;
+    margin: 1em;
+    width: 150px;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+#output{
+	margin: 0 5.5em;
+    position: absolute;
+}
+
+
+
+ #swf{
+   margin: 0 18.5em;
+}
+
+
+#reload{
+ margin: 0 12em;
+    position: absolute;
+}
+.diagramstyle{
+      border: 2px dotted #000000;
+      border-radius: 10px 10px 10px 10px;
+      height: 326px;
+      margin-left: 100px;
+      overflow: hidden;
+      width: 300px;
+}
+
+.odd{
+    background: none repeat scroll 0 0 #216f90;
+	padding: 0px 0 7px 0;
+	color: #FFFFFF !important;
+	border: 0 none !important;
+	border-radius: 0 0 0 0 !important;
+	font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
+	font-size: 1em !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	text-align: center !important;
+	width: 12em;
+}
+
+.even{
+    background: none repeat scroll 0 0 #2D94C1;
+	color: #FFFFFF !important;
+	border: 0 none !important;
+	border-radius: 0 0 0 0 !important;
+	font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
+	font-size: 1em !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	line-height: 1.1em !important;
+	padding: 5px 0 7px 0;
+	text-align: center !important;
+	width: 12em;
+}
+
+#resultsection {
+      border: 2px dotted #000000;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 48px;
+    position: absolute;
+    top: 267px;
+    width: 248px;
+}
+
+.headerarea{
+     border-bottom: 2px solid #010101;
+    font-size: 18px;
+    font-weight: bold;
+    height: 32px;
+    padding: 5px;
+    text-align: left;
+}
+
+.headerarea5{
+     border-bottom: 2px solid #010101;
+    font-size: 18px;
+    font-weight: bold;
+    height: 50px;
+    padding: 5px;
+    text-align: left;
+}
+#selectedvalue h3{
+    text-align: center;
+}
+
+.borderstyle {
+    border: 2px dotted #000000;
+    border-radius: 10px 10px 10px 10px;
+    height: 313px;
+    margin-top: -8px;
+    width: 251px;
+}
+
+
+
+#outputarea {
+    min-height: 12em;
+}
+
+
+
+#header h1{
+      padding-left:20px;
+      padding-bottom:20px;
+}
+
+#selectedvalue ul{
+     list-style: none outside none;
+    padding-left: 20px;
+    width: 258px;
+}
+
+#outputarea ul li{
+      border-bottom: 1px dashed #000000;
+}
+
+.aligntext{
+      padding-left:20px;
+}
+.materialvalueout{
+    height: 10em;
+    margin: -15em 19.5em;
+    width: 14.35em;
+}
+
+.materialvalueout tr td{
+      padding-left: 10px;
+      text-align: justify;
+}
+
+#outputarea ul{
+     list-style: none outside none;
+   padding: 3px 20px;
+    width: 178px;
+}
+#plotenergy{
+	 margin: 0 25em;
+    position: absolute;
+}
+#buttonstyle2{
+	  left: -49px;
+    margin-left: 60px;
+    position: absolute;
+    top: 240px;
+}
+
+.buttonstyle{
+      background: none repeat scroll 0 0 #CD2626;
+      border: medium none;
+      color: #E6E6E6;
+      padding: 5px;
+}
+.prompt{
+      background: none repeat scroll 0 0 #CD2626;
+      border: medium none;
+      color: #E6E6E6;
+      padding: 0px;
+	 position: absolute;left: 232px; top:129px; 
+}
+
+.prompt1{
+      background: none repeat scroll 0 0 #CD2626;
+      border: medium none;
+      color: #E6E6E6;
+      padding: 0px;
+	  position: absolute;left: 154px; top:129px;
+}
+.buttonstyle:hover{
+      text-shadow: 1px 1px 2px #000000;
+      box-shadow: 2px 2px 2px #000000;
+}
+
+
+
+#diagramcontainer {
+     border: 2px dotted #000000;
+    border-radius: 10px 10px 10px 10px;
+    height: 311px;
+    margin-left: 100px;
+    margin-top: -290px;
+    overflow: hidden;
+    width: 290px;
+}
+#buttonfooter{
+	display: inline;
+    float: none;
+    margin-left: 77px;
+    margin-top: 15px;
+    width: 500px;
+}
+
+.borderstyle tr {
+	width: 50px;
+}
+#contentoutput{
+	  border-bottom: 2px solid #DDDDDD;
+    height: 14em;
+    margin: -9em 20em;
+    overflow: auto;
+    position: relative;
+    width: 15em;
+}
+
+#diagram {
+	margin-left: -203px;
+    margin-top: 30px;
+}
+.work-space{
+	position : absolute;
+    top:126px;
+    left:686px;
+  
+}
+.textStyle{
+	font-size:12px;
+	font-weight: bold;
+	font-family: Arial,Sans-serif;
+}
+body{background:#eee;font-family:Verdana, Helvetica, Arial, sans-serif;margin:0;padding:0}
+.example{background:#FFF;width:600px;height:200px;font-size:80%;border:1px #000 solid;margin:0.5em 10% 0.5em;padding:1em 2em 2em;-moz-border-radius:3px;-webkit-border-radius:3px}
+.example button {width:150px}

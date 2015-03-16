@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title> Pulsed Heating- COEP </title>
+		<link rel="stylesheet" type="text/css" href="css/plusedheating.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.8.16.custom.css" media="screen" />
+		<!--<script type="text/javascript" src="js/jsxgraphcore.js"></script>-->
+		<script type="text/javascript" src="../../lib/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="../../lib/highcharts.js"></script>
+		<script type="text/javascript" src="js/themes/dark-green.js"></script>
+		<script type="text/javascript" src="js/modules/exporting.js"></script>
+		<script type="text/javascript" src="../../lib/raphael.js"></script>
+		<script type="text/javascript" src="js/pulsedheating.js"></script>
+			<link rel="stylesheet" href="../../css/common.css" />
+		<script type="text/javascript">
+			var volume, radious, indataarray = [];
+			var objMaterial, draw, objdata, i = 0;
+
+		</script>
+		
+		<style type="text/css">
+			/*demo page css*/
+			#GraphLCC {
+				position: absolute;
+				visibility: hidden;
+				width: 520px;
+				height: 530px;
+				left: 10px;
+				top: 10px;
+				background-color: #eee;
+				border: 1px solid #000;
+				padding: 10px;
+				font-family:Times;
+			}
+			#close {
+				float: right;
+			}
+			.imag{position:absolute;z-index:9999;left:664px;top:4px;}
+			.imag1{position:absolute;z-index:9999;left:1225px;top:85px;}
+
+		</style>
+	</head>
+	<body>
+		<!--<div id="header">
+			<h1 class="header">Pulsed Heating </h1>
+		</div>-->
+		
+		<div id="header"><span style="font-size:25px;position:absolute;top:-25px;font-family:Times; color: #000;"><h3>To Study Pulsed Heating of Materials<br> with High Energy Density Pulses</h3></span><img class = "imag" src="../../../images/coep_logo_sim.png"><!--<a href="../../../../logout.htm" ><img id="logout" class ="imag1" src="../../images/logout.png"></a>--></div>
+		<div class="colmask threecol">
+			<div class="colmid">
+				<div class="colleft">
+					<div class="col1">
+						<!-- Column 1 start -->
+						<div id = "diagramcontainer">
+						<!--<INPUT type="button" value="Play Animation" id="swf" onClick="window.open('./animation.html','_blank');">-->
+							<canvas id="diagram" width="350" height="250"></canvas>
+						</div>
+						<div id = "interactiontime"></div>
+						<div id = "interactiontime1"></div>
+						<div id = "outputresultsection">
+							<div class = "headerarea">
+								<font face="Times">Output</font>
+							</div>
+							<INPUT type="button" value="Play Animation" id="swf" onClick="window.open('./animation.html','_blank');">
+							<div id="contentoutput"><div id = "outputarea"></div></div>
+							<input type="button" value="Plot Energy vs Volume" id="plotenergy" class="buttonstyle" />
+						</div>
+						
+				
+						<!-- Column 1 end -->
+					</div>
+					<div class="col2">
+						<!-- Column 2 start -->
+						<div class="borderstyle">
+							
+							<h3 style="position:relative;border-bottom:2px solid #000;top:-15px;height: 40px;font-family:Times;font-size: 18px;text-align: center;">Control Panel</h3>
+							<div class="leftcontent">
+								<span style = "position: absolute;
+    top: 58px;">Type of State</span>
+							</div>
+														<div class="rightconetnt">
+								<select id="state" name="state" class = "inputstyle">
+									<option selected="selected"> --select-- </option>
+									<option value=1> Heating </option>
+									<option value=2> Melting </option>
+									<option value=3> Evaporating </option>
+								</select>
+							</div>
+							<div class="leftcontent">
+								<span style = "position:absolute;top:90px;"> Materials </span>
+							</div>
+							<div class="rightconetnt">
+								<div id = "materialoption"></div>
+							</div>
+							<div class="leftcontent">
+								<span style = "position:absolute;top:135px;">Heat Energy (kJ/sec)</span>
+							</div>
+							<div class="leftcontent">
+								<span style = "position:absolute;top:180px;">Interaction Time </span>
+							</div>
+							<div class="rightconetnt">
+								<select id="energy" name="energy" class = "inputstyle1">
+									<option selected="selected"> --select-- </option>
+									<option value=10> 10 </option>
+									<option value=20> 20 </option>
+									<option value=30> 30 </option>
+									<option value=40> 40 </option>
+									<option value=50> 50 </option>
+								</select>
+							</div>
+							<div id="buttonfooter">
+								<input type="button" value="Output" id="output"  class="buttonstyle"/>
+								<input type="button" value="Reload" class="buttonstyle" id = "reload" />
+								
+								</div>
+						</div>
+						<div id = "resultsection">
+							<div class = "headerarea2">
+								Material Selected and Its Property
+							</div>
+							<div id = "selectedvalue"></div>
+						</div>
+						<!-- Column 2 end -->
+					</div>
+					<div class="col3">
+						<!-- Column 3 start -->
+						<div id="container" style="top:-2px;position:absolute;width: 620px; height: 400px; margin: 0 auto;padding:10px;"></div>
+						<!-- Column 3 end -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!--<div id="footer">
+			
+		</div>-->
+		<div style="position:absolute; top:781px; width:1343px; left:5px; height:60px">
+	<div class="art-footer">
+                <div class="art-footer-t"></div>
+                <div class="art-footer-l"></div>
+                <div class="art-footer-b"></div>
+                <div class="art-footer-r"></div>
+                <div class="art-footer-body">
+                    <a href="#" class="art-rss-tag-icon" title="RSS"></a>
+    <!-- <a href="./../../../../feedback.htm" class="art-rss-feedback-icon" title="RSS"></a>-->
+                            <div class="art-footer-text">
+                            
+                                                            </div>
+                    <div class="cleared"></div>
+                </div>
+            </div>
+</div>
+	</body>
+</html>
