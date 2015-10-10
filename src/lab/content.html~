@@ -10,7 +10,7 @@ edit -->
 <html lang="en">
 
 <head>
-  <title>Sensor Lab</title>
+  <title>Micromachining laboratory</title>
 </head>
 
 <body>
@@ -25,13 +25,13 @@ edit -->
     <div id="lab-header-logo" class="logo">
       <!-- Enclose the logo image of your lab or write it in 
       text-->
-      <img src="images/logo.jpg" />
+      <img src="images/logo.png" />
     </div>
 
     <div id="lab-header-heading" class="heading">
     <!-- Write the name of your lab and link it to the home page
     of your lab. -->
-      <a href="index.html">Sensor Lab</a>	
+      <a href="index.html">Micromachining laboratory</a>	
     </div>
 
     <!-- Add any additional element or link you want to add to 
@@ -54,7 +54,7 @@ edit -->
       <!-- You can add a welcome message or title of the 
       experiment enclosed in h1 tag here -->
       <div id="lab-article-heading" class="heading">
-        Welcome to Sensor Lab!
+        Welcome to Micromachining laboratory!
       </div>
 
       <!-- Add any additional element if required with proper 
@@ -82,7 +82,7 @@ edit -->
       <section id="lab-article-section-1">
         <div id="lab-article-section-1-icon" class="icon">
           <!-- Enclose the icon image for the section. -->
-	  <img src="images/introduction.jpg" />
+	  <img src="images/introduction.png" />
 	</div>
 
 
@@ -111,7 +111,7 @@ edit -->
         
         <div id="lab-article-section-2-icon" class="icon">
           <!-- Enclose the icon image for the section. -->
-	  <img src="images/simulation.jpg" />
+	  <img src="images/content_4.png" />
 	</div>
 
 
@@ -128,7 +128,7 @@ edit -->
 	  
             <li> 
 	      <!--Link and name of the experiment 1 -->
-	      <a href="Rtd/index.html">RTD</a> 
+	      <a href="PulsedHeating/index.html">	To study pulsed-heating of materials</a> 
 	    </li>
 	  </ul>
 	</div>
@@ -137,7 +137,7 @@ edit -->
 	  
             <li> 
 	      <!--Link and name of the experiment 1 -->
-	      <a href="Biosensor/index.html">BioSensor</a> 
+	      <a href="LazerankosErosionModel/index.html">To study erosion mechanism from Lazarenko's model </a> 
 	    </li>
 	  </ul>
 	</div>
@@ -146,7 +146,7 @@ edit -->
 	  
             <li> 
 	      <!--Link and name of the experiment 1 -->
-	      <a href="Capacitance/index.html">Capacitance</a> 
+	      <a href="DibitontoVsSalonitis/index.html">To study various thermal models for EDM</a> 
 	    </li>
 	  </ul>
 	</div>
@@ -155,7 +155,7 @@ edit -->
 	  
             <li> 
 	      <!--Link and name of the experiment 1 -->
-	      <a href="LinearVariableDifferntialTransformer/index.html">LinearVariableDifferntialTransformer</a> 
+	      <a href="EDM/index.html">To study influence of process parameters on the Wire EDM </a> 
 	    </li>
 	  </ul>
 	</div>
@@ -165,7 +165,7 @@ edit -->
 	  
             <li> 
 	      <!--Link and name of the experiment 1 -->
-	      <a href="MeasurementOfConductivity/index.html">MeasurementOfConductivity</a> 
+	      <a href="YAGLaser/index.html">Laser hardening using NdYAG laser system</a> 
 	    </li>
 	  </ul>
 	</div>
@@ -174,7 +174,7 @@ edit -->
 	  
             <li> 
 	      <!--Link and name of the experiment 1 -->
-	      <a href="Orifice/index.html">Orifice</a> 
+	      <a href="LaserSpotWelding/index.html">Laser spot welding using NdYAG laser system</a> 
 	    </li>
 	  </ul>
 	</div>
@@ -183,7 +183,7 @@ edit -->
 	  
             <li> 
 	      <!--Link and name of the experiment 1 -->
-	      <a href="PHCalculation/index.html">PHCalculation</a> 
+	      <a href="ECM/index.html">Study of Electrochemical machining process</a> 
 	    </li>
 	  </ul>
 	</div>
@@ -192,19 +192,11 @@ edit -->
 	  
             <li> 
 	      <!--Link and name of the experiment 1 -->
-	      <a href="StrainGuage/index.html">StrainGuage</a> 
+	      <a href="ECG/index.html">Study the effect of process parameters in electrochemical grinding</a> 
 	    </li>
 	  </ul>
 	</div>
-<div id="lab-article-section-2-content" class="content">
-	  <ul id="list-of-experiments">
-	  
-            <li> 
-	      <!--Link and name of the experiment 1 -->
-	      <a href="Thermocouple/index.html">Thermocouple</a> 
-	    </li>
-	  </ul>
-	</div>
+
       </section>
       </div>	
 
