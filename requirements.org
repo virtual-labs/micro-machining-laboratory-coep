@@ -40,7 +40,7 @@ It should contain the Aim,Pretest, Theory,Procedure,Audio/Video,Post test,Review
   
 - Posttest tab:When we click on the Pretest link,Posttest  page should get display on the screen with questions along with objectives and Submit and Reset button.  
   
--Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
+- Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
 
 ** To study various thermal models for EDM
 
@@ -52,7 +52,7 @@ It should contain the Aim,Pretest, Theory,Procedure,Audio/Video,Post test,Review
   
 - Posttest tab:When we click on the Pretest link,Posttest page should get display on the screen with questions along with objectives and Submit and Reset button.  
   
--Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
+- Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
 
 ** To study influence of process parameters on the Wire EDM
 
@@ -64,7 +64,7 @@ It should contain the Aim,Pretest, Theory,Procedure,Audio/Video,Post test,Review
   
 - Posttest tab:When we click on the Pretest link,Posttest page should get display on the screen with questions along with objectives and Submit and Reset button.  
   
--Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
+- Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
 
 ** Laser hardening using NdYAG laser system
 
@@ -76,7 +76,7 @@ It should contain the Aim,Pretest, Theory,Procedure,Audio/Video,Post test,Review
   
 - Posttest tab:When we click on the Pretest link,Posttest page should get display on the screen with questions along with objectives and Submit and Reset button.  
   
--Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
+- Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
 
 ** Laser spot welding using NdYAG laser system
 
@@ -88,7 +88,7 @@ It should contain the Aim,Pretest, Theory,Procedure,Audio/Video,Post test,Review
   
 - Posttest tab:When we click on the Pretest link,Posttest page should get display on the screen with questions along with objectives and Submit and Reset button.  
   
--Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
+- Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
 
 ** Study of Electrochemical machining process
 
@@ -100,7 +100,7 @@ It should contain the Aim,Pretest, Theory,Procedure,Audio/Video,Post test,Review
   
 - Posttest tab:When we click on the Pretest link,Posttest page should get display on the screen with questions along with objectives and Submit and Reset button.  
   
--Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
+- Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
 
 ** Study the effect of process parameters in electrochemical grinding
 
@@ -112,4 +112,4 @@ It should contain the Aim,Pretest, Theory,Procedure,Audio/Video,Post test,Review
   
 - Posttest tab:When we click on the Pretest link,Posttest page should get display on the screen with questions along with objectives and Submit and Reset button.  
   
--Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
+- Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
