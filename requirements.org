@@ -28,7 +28,7 @@ It should contain the Aim,Pretest, Theory,Procedure,Audio/Video,Post test,Review
   
 - Posttest tab:When we click on the Pretest link,Posttest page should get display on the screen with questions along with objectives and Submit and Reset button.  
   
--Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
+- Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
 
 ** To study erosion mechanism from Lazarenko's model
 
