@@ -1,0 +1,115 @@
+#+title: Requirement/Workflow for Micro machining Lab
+#+Author: Integration Team
+#+Date: [2016-03-30]
+
+This document contains the basic work flow and requirement for Micro machining lab.Testing should happen against all the requirements mentioned in this document by integration team.
+
+* Lab wise requirements
+
+Main page Should contain following tabs for Micro machining Lab with the content related to the introduction.
+
+** Introduction
+
+Content should display on page related to the introduction of Micro machining Lab.
+
+** List of experiments
+
+List of experiment related to Micro machining Lab should display on page.
+
+* Experiment wise requirements
+
+** To study pulsed-heating of materials
+
+It should contain the Aim,Pretest, Theory,Procedure,Audio/Video,Post test,Review Questions,Photo Gallery and feedback on the left corner and all the tabs should contain the relevant information.
+
+- Pretest tab:When we click on the  Pretest link,Pretest page should get display on the screen with questions along with objectives and Submit and Reset button.
+
+- Simulator: Here user needs to select some of inputs and play animation using play button at left side.This button should open new simulation pop-up, again user needs to run simulation using two buttons in the simulation. "Close" button should close the simulation pop-up."Reload" button should reload the page."Output" button should display the output."Graph" button should display the graph in new pop-up after three readings.
+  
+- Posttest tab:When we click on the Pretest link,Posttest page should get display on the screen with questions along with objectives and Submit and Reset button.  
+  
+-Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
+
+** To study erosion mechanism from Lazarenko's model
+
+It should contain the Aim,Pretest, Theory,Procedure,Audio/Video,Post test,Review Questions,Photo Gallery and feedback on the left corner and all the tabs should contain the relevant information.
+
+- Pretest tab:When we click on the  Pretest link,Pretest page should get display on the screen with questions along with objectives and Submit and Reset button.
+
+- Simulator: Here user needs to select some of inputs and play animation using play button at left side.This button should open new simulation pop-up. "Close" button should close the simulation pop-up."Reload" button should reload the page."Output" button should display the output.
+  
+- Posttest tab:When we click on the Pretest link,Posttest  page should get display on the screen with questions along with objectives and Submit and Reset button.  
+  
+-Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
+
+** To study various thermal models for EDM
+
+It should contain the Aim,Pretest, Theory,Procedure,Audio/Video,Post test,Review Questions,Photo Gallery and feedback on the left corner and all the tabs should contain the relevant information.
+
+- Pretest tab:When we click on the  Pretest link,Pretest page should get display on the screen with questions along with objectives and Submit and Reset button.
+
+- Simulator: Here user needs to select some of inputs and play animation using play button at left side.This button should open new simulation pop-up. "Close" button should close the simulation pop-up."Reload" button should reload the page."Output" button should display the output."Graph" button should display the graph in new pop-up.
+  
+- Posttest tab:When we click on the Pretest link,Posttest page should get display on the screen with questions along with objectives and Submit and Reset button.  
+  
+-Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
+
+** To study influence of process parameters on the Wire EDM
+
+It should contain the Aim,Pretest, Theory,Procedure,Audio/Video,Post test,Review Questions,Photo Gallery and feedback on the left corner and all the tabs should contain the relevant information.
+
+- Pretest tab:When we click on the  Pretest link,Pretest page should get display on the screen with questions along with objectives and Submit and Reset button.
+
+- Simulator: Here user needs to select some of inputs and play animation using play button at left side.This button should run the animation."Reload" button should reload the page."Output" button should display the output and graph."Graph" button should display the graph in new pop-up after five readings.
+  
+- Posttest tab:When we click on the Pretest link,Posttest page should get display on the screen with questions along with objectives and Submit and Reset button.  
+  
+-Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
+
+** Laser hardening using NdYAG laser system
+
+It should contain the Aim,Pretest, Theory,Procedure,Audio/Video,Post test,Review Questions,Photo Gallery and feedback on the left corner and all the tabs should contain the relevant information.
+
+- Pretest tab:When we click on the  Pretest link,Pretest page should get display on the screen with questions along with objectives and Submit and Reset button.
+
+- Simulator: Here user needs to select some of inputs and play animation using start button.This button should run the animation."Reload" button should reload the page."Output" button should display the output."Graph" button should display the graph in new pop-up.Micro-structure button should open the images in new page.
+  
+- Posttest tab:When we click on the Pretest link,Posttest page should get display on the screen with questions along with objectives and Submit and Reset button.  
+  
+-Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
+
+** Laser spot welding using NdYAG laser system
+
+It should contain the Aim,Pretest, Theory,Procedure,Audio/Video,Post test,Review Questions,Photo Gallery and feedback on the left corner and all the tabs should contain the relevant information.
+
+- Pretest tab:When we click on the  Pretest link,Pretest page should get display on the screen with questions along with objectives and Submit and Reset button.
+
+- Simulator: Here user needs to select some of inputs and user can get the output using output button.This button should run the animation."Play" button should open the simulation in another pop-up where again user can use different button to play and pause the simulator."Reload" button should reload the page."Graph" button should display the graph in new pop-up after three successful readings.
+  
+- Posttest tab:When we click on the Pretest link,Posttest page should get display on the screen with questions along with objectives and Submit and Reset button.  
+  
+-Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
+
+** Study of Electrochemical machining process
+
+It should contain the Aim,Pretest, Theory,Procedure,Audio/Video,Post test,Review Questions,Photo Gallery and feedback on the left corner and all the tabs should contain the relevant information.
+
+- Pretest tab:When we click on the  Pretest link,Pretest page should get display on the screen with questions along with objectives and Submit and Reset button.
+
+- Simulator: User can select different inputs and start the animation using "Power supply" button in the simulator.according to input selection changes should happen in the Simulator and should work properly in sequence.
+  
+- Posttest tab:When we click on the Pretest link,Posttest page should get display on the screen with questions along with objectives and Submit and Reset button.  
+  
+-Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
+
+** Study the effect of process parameters in electrochemical grinding
+
+It should contain the Aim,Pretest, Theory,Procedure,Audio/Video,Post test,Review Questions,Photo Gallery and feedback on the left corner and all the tabs should contain the relevant information.
+
+- Pretest tab:When we click on the  Pretest link,Pretest page should get display on the screen with questions along with objectives and Submit and Reset button.
+
+- Simulator: Here user needs to select only inputs and observe the animation.
+  
+- Posttest tab:When we click on the Pretest link,Posttest page should get display on the screen with questions along with objectives and Submit and Reset button.  
+  
+-Feedback tab:When we click on the Feedback link,Feedback page should get display with all fields and Submit button.
