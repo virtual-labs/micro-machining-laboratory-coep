@@ -14,8 +14,10 @@ RUN apt-get update
 # Usage: Installing dependencies for system operations
 RUN apt-get install -y git sudo net-tools wget apache2 make
 
-# Usage: Cloning data-structures lab
-RUN git clone https://github.com/Virtual-Labs/micro-machining-laboratory-coep 
+RUN mkdir /micro-machining-laboratory-coep
+
+COPY src/ /micro-machining-laboratory-coep/src
+
 WORKDIR ./micro-machining-laboratory-coep/src
 
 # Usage: Running make
@@ -26,6 +28,7 @@ RUN rm -rf /var/www/*
 RUN cp -r ../build/* /var/www/
 
 EXPOSE 80
+EXPOSE 443
 
 # Usage: Setting permissions in /var/www 
 RUN chmod -R 755 /var/www/*
